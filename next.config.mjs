@@ -15,7 +15,7 @@ const nextConfig = {
         return [
             {
                 source: '/api/:path*', // Matches any path under `/api/`
-                destination: 'http://44.202.217.131:5000/api/:path*', // Your backend's HTTP URL
+                destination: `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/:path*`, // Your backend's HTTP URL
             },
         ];
     },

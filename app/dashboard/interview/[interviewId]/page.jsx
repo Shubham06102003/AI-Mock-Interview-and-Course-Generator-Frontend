@@ -70,6 +70,7 @@ function Interview({ params }) {
                 <div>
                     {webCamEnabled ? (
                         <Webcam
+                            audio={true} //enable microphone
                             onUserMedia={() => setWebCamEnabled(true)}
                             onUserMediaError={() => setWebCamEnabled(false)}
                             mirrored={true}

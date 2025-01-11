@@ -57,7 +57,7 @@ const RecordAnswerSection = ({ mockInterviewQuestion, activeQuestionIndex, inter
     });
 
     try {
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/analyze`, formData, {
+      const response = await axios.post(`/api/analyze`, formData, {
   headers: {
     'Content-Type': 'multipart/form-data',
   },
